@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WEB 1</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+    <script src="https://kit.fontawesome.com/b2b8b411ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+    <div id="page-wraper">
+
+        <section class="section my-services" data-section="section2">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Co-founders Portal</h2>
+                    <div class="line-dec"></div>
+                    <span>
+                        Surf through some of the amazing IDEAs !!</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div class="service-item" onclick="openpopup()">
+                            <div class="first-service-icon service-icon"></div>
+                            <button type="submit" class="btn3" onclick="openpopup()">submit</button>
+                            <h4>Co-founder 1</h4>
+                            <p>
+                                Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                                at bibendum. Sed ac ante non metus vehicula congue quis eget
+                                eros.
+                            </p>
+                        </div>
+                        <div class="popup" id="popup">
+                            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur atque aliquid
+                                reiciendis labore totam rem officia, mollitia a beatae sed. Adipisci, inventore numquam
+                                aperiam optio quas consectetur voluptatibus tempora quasi!</h2>
+                            <button type="button" onclick="closepopup()">OK</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            
+            let popup = document.getElementById("popup");
+            function openpopup() {
+                popup.classList.add("open-popup");
+
+            } function closepopup() {
+                popup.classList.remove("open-popup");
+
+            }
+        </script>
+    </div>
+</body>
+
+</html>
